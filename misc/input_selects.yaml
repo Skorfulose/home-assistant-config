@@ -1,14 +1,13 @@
-input_select:
-  harmony:
-    name: Harmony-Aktivität
-    options:
-      - Aus
-      - Apple TV sehen
-      - Fernsehen
-      - Wiedergabe PS3
-      - Musik hören
-      - Spotify
-      - iPod hören
-      - Fire TV sehen
-    initial: Aus
-    icon: mdi:tv
+harmony:
+  name: Harmony-Aktivität
+  options:
+    - Aus
+    - Apple TV sehen
+    - Fernsehen
+    - Wiedergabe PS3
+    - Musik hören
+    - Spotify
+    - iPod hören
+    - Fire TV sehen
+  initial: Aus
+  icon: mdi:tv
