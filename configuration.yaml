@@ -43,3 +43,5 @@ zwave:
 # Add media players
 media_player:
   - platform: sonos
+
+script: !include_dir_named scripts/
