@@ -21,4 +21,5 @@ pyozw.sqlite
 .HA_VERSION
 .google.token
 .uuid
+.DS_Store
 !/.gitignore
