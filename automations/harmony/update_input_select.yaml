@@ -1,14 +1,14 @@
 alias: Harmony - update input select
 trigger:
   platform: state
-    entity_id: remote.harmony
-  action:
-    service: input_select.select_option
-    data_template:
-      entity_id: input_select.harmony
-      option: >
-        {% if states.remote.harmony.attributes.current_activity == "PowerOff" %}
-            Aus
-        {% else %}
-            {{ states.remote.harmony.attributes.current_activity }}
-        {% endif %}
+  entity_id: remote.harmony
+action:
+  service: input_select.select_option
+  data_template:
+    entity_id: input_select.harmony
+    option: >
+      {% if states.remote.harmony.attributes.current_activity == "PowerOff" %}
+        Aus
+      {% else %}
+        {{ states.remote.harmony.attributes.current_activity }}
+      {% endif %}
