@@ -18,5 +18,7 @@ plex.conf
 phue.conf
 harmony_media_room.conf
 pyozw.sqlite
-.*
+.HA_VERSION
+.google.token
+.uuid
 !/.gitignore
