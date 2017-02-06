@@ -44,4 +44,8 @@ zwave:
 media_player:
   - platform: sonos
 
+tts:
+  - platform: google
+    language: de
+
 script: !include_dir_named scripts/
