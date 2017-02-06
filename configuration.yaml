@@ -44,6 +44,11 @@ zwave:
 media_player:
   - platform: sonos
 
+remote:
+  - platform: harmony
+    name: Wohnzimmer
+    host: harmonyhub
+
 tts:
   - platform: google
     language: de
