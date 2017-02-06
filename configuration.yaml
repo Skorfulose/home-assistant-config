@@ -46,7 +46,7 @@ media_player:
 
 remote:
   - platform: harmony
-    name: Wohnzimmer
+    name: Harmony
     host: harmonyhub
 
 tts:
@@ -54,3 +54,5 @@ tts:
     language: de
 
 script: !include_dir_named scripts/
+automation: !include_dir_list automations/
+input_select: !include misc/input_selects.yaml
