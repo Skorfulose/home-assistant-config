@@ -40,6 +40,9 @@ sun:
 zwave:
   usb_path: /dev/zstick
 
+# Apple iOS:
+ios:
+
 mqtt:
   broker: localhost
   port: 1883
