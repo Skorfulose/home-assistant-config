@@ -1,0 +1,21 @@
+- platform: google_travel_time
+  name: !secret travel_friendly_name_1
+  api_key: !secret google_maps_api_key
+  origin: zone.home
+  destination: zone.zone1
+- platform: google_travel_time
+  name: !secret travel_friendly_name_2
+  api_key: !secret google_maps_api_key
+  origin: zone.zone1
+  destination: zone.home
+
+- platform: google_travel_time
+  name: !secret travel_friendly_name_3
+  api_key: !secret google_maps_api_key
+  origin: zone.home
+  destination: zone.zone2
+- platform: google_travel_time
+  name: !secret travel_friendly_name_4
+  api_key: !secret google_maps_api_key
+  origin: zone.zone2
+  destination: zone.home

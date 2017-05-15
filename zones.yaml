@@ -1,0 +1,11 @@
+- name: zone1
+  latitude: !secret zone1_latitude
+  longitude: !secret zone1_longitude
+  radius: !secret zone1_radius
+  icon: mdi:briefcase
+
+- name: zone2
+  latitude: !secret zone2_latitude
+  longitude: !secret zone2_longitude
+  radius: !secret zone2_radius
+  icon: mdi:briefcase
