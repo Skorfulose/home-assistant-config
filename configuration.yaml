@@ -68,6 +68,12 @@ tts:
   - platform: google
     language: de
 
+vacuum:
+  - platform: xiaomi
+    name: Wall-E
+    host: !secret mi_robo_ip
+    token: !secret mi_robo_token
+
 script: !include_dir_named scripts/
 automation: !include_dir_list automations/
 input_select: !include misc/input_selects.yaml
