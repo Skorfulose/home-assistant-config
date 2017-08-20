@@ -80,3 +80,4 @@ automation: !include_dir_list automations/
 input_select: !include misc/input_selects.yaml
 sensor: !include_dir_merge_list sensors/
 zone: !include zones.yaml
+scene: !include scenes.yaml

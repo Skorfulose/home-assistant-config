@@ -1,0 +1,21 @@
+- name: Rolladen EG hoch
+  entities:
+    cover.wz_rolladen_links_level:
+      position: 100
+    cover.wz_rolladen_mitte_level:
+      position: 100
+    cover.wz_rolladen_rechts_level:
+      position: 100
+    cover.kuche_rolladen_level:
+      position: 100
+
+- name: Rolladen EG runter
+  entities:
+    cover.wz_rolladen_links_level:
+      position: 10
+    cover.wz_rolladen_mitte_level:
+      position: 30
+    cover.wz_rolladen_rechts_level:
+      position: 15
+    cover.kuche_rolladen_level:
+      position: 15
