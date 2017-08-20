@@ -39,6 +39,7 @@ sun:
 # Enable Z-Wave
 zwave:
   usb_path: /dev/zstick
+  network_key: !secret zwave_network_key
 
 # Apple iOS:
 ios:
