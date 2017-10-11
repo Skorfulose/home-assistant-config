@@ -19,3 +19,6 @@
   api_key: !secret google_maps_api_key
   origin: zone.zone2
   destination: zone.home
+
+# Weather prediction
+- platform: yr
