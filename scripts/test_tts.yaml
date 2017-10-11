@@ -1,8 +1,0 @@
-alias: Test for TTS
-sequence:
-  - service: script.turn_on
-    entity_id: script.sonos_tts
-    data:
-      variables:
-        where: 'bad'
-        what: 'Hallo Thomas. Dies ist ein Test. Lirum Larum Löffelstiel'
