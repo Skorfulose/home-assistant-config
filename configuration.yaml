@@ -77,7 +77,8 @@ zwave:
   network_key: !secret zwave_network_key
 
 history_graph:
-  Energieverbrauch:
+  energieverbrauch:
+    name: Energieverbrauch
     entities:
       - sensor.trockner_energy
       - sensor.waschmaschine_energy
