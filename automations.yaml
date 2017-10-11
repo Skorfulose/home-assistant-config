@@ -1,0 +1,55 @@
+- id: harmony_power_off
+  alias: Harmony - power off from input select
+  trigger:
+    platform: state
+    entity_id: input_select.harmony
+    to: 'Aus'
+  condition:
+    condition: template
+    value_template: '{{ states.remote.wohnzimmer.attributes.current_activity != "PowerOff" }}'
+  action:
+    service: remote.turn_off
+    entity_id: remote.wohnzimmer
+- id: harmony_start_activity
+  alias: Harmony - start activity from input select
+  trigger:
+    platform: state
+    entity_id: input_select.harmony
+  condition:
+    condition: template
+    value_template: '{{ states.remote.wohnzimmer.attributes.current_activity != states.input_select.harmony.state and not is_state("input_select.harmony", "Aus") }}'
+  action:
+    service: remote.turn_on
+    entity_id: remote.wohnzimmer
+    data_template:
+      activity: >
+        {% if is_state("input_select.harmony", "Apple TV sehen") %}
+          14431475
+        {% elif is_state("input_select.harmony", "Fernsehen") %}
+          14431436
+        {% elif is_state("input_select.harmony", "Wiedergabe PS3") %}
+          14431521
+        {% elif is_state("input_select.harmony", "Musik hören") %}
+          14431578
+        {% elif is_state("input_select.harmony", "Spotify") %}
+          16371284
+        {% elif is_state("input_select.harmony", "iPod hören") %}
+          14431550
+        {% elif is_state("input_select.harmony", "Fire TV sehen") %}
+          14431499
+        {% endif %}
+- id: harmony_update_input_select
+  alias: Harmony - update input select
+  trigger:
+    platform: state
+    entity_id: remote.wohnzimmer
+  action:
+    service: input_select.select_option
+    data_template:
+      entity_id: input_select.harmony
+      option: >
+        {% if states.remote.wohnzimmer.attributes.current_activity == "PowerOff" %}
+          Aus
+        {% else %}
+          {{ states.remote.wohnzimmer.attributes.current_activity }}
+        {% endif %}

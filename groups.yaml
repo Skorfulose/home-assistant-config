@@ -1,0 +1,27 @@
+Rolladen:
+  view: yes
+  entities:
+    - group.rolladen_erdgeschoss
+    - group.rolladen_obergeschoss
+    - scene.rolladen_eg_hoch
+    - scene.rolladen_eg_runter
+Energie:
+  view: yes
+  entities:
+    - sensor.trockner_energy
+    - sensor.umwalzpumpe_energy
+    - sensor.waschmaschine_energy
+    - history_graph.energieverbrauch
+Rolladen Erdgeschoss:
+  entities:
+    - cover.kuche_rolladen_level
+    - cover.wz_rolladen_links_level
+    - cover.wz_rolladen_mitte_level
+    - cover.wz_rolladen_rechts_level
+Rolladen Obergeschoss:
+  entities:
+    - cover.bubi_rolladen_level
+    - cover.lena_rolladen_links_level
+    - cover.lena_rolladen_rechts_level
+    - cover.sz_rolladen_links_level
+    - cover.sz_rolladen_rechts_level
